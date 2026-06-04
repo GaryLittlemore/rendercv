@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <header class="app-header">
+        <h1>📝 MarkDown CV</h1>
+        <div class="controls">
+            <select id="theme-selector">
+                <option value="theme-minimal">Modern Minimalist</option>
+                <option value="theme-creative">Creative Teal</option>
+                <option value="theme-classic">Classic Corporate</option>
+            </select>
+            <button id="download-pdf-btn" class="btn-primary">Export to PDF</button>
+        </div>
+    </header>
+
+    <main class="workspace">
+        <section class="editor-pane">
+            <textarea id="markdown-input" placeholder="Type your resume in Markdown here..."></textarea>
+        </section>
+
+        <section class="preview-pane">
+            <div id="resume-preview" class="theme-minimal">
+                </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
